@@ -12,7 +12,7 @@ stages{
     stage('CheckoutCode'){
 	steps{
 	    slacknotifications("STARTED")
-	git branch: "${params.BranchName}", credentialsId: 'c8718ca7-913c-4710-8012-fe46033e1aef', url: 'https://github.com/sandisoft/maven-web-application.git' 
+	git branch: 'development', credentialsId: 'c8718ca7-913c-4710-8012-fe46033e1aef', url: 'https://github.com/sandisoft/maven-web-application.git' 
 	}
 	}
   
